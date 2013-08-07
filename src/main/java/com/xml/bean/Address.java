@@ -1,6 +1,6 @@
-package com.byName.bean;
+package com.xml.bean;
 
-public class OfficeAddress {
+public class Address {
 	String locality;
 	String stete;
 	public String getLocality() {
@@ -18,6 +18,6 @@ public class OfficeAddress {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return " working @ " + this.getLocality() + " " + this.getStete() ;
+		return " living in " + this.getLocality() + " " + this.getStete() ;
 	}
 }

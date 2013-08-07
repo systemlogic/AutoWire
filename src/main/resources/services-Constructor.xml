@@ -8,18 +8,18 @@
 	http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
   <!-- services -->
-  	<context:component-scan base-package="com.byName.bean" />
+  	<context:component-scan base-package="com.xml.bean" />
 
- <bean id="uidBEAN" class="com.byName.bean.UID" autowire="constructor" > <!--  no and default is same --> 
+ <bean id="uidBEAN" class="com.xml.bean.UID" autowire="constructor" > <!--  no and default is same --> 
     <property name="uid" value="11002244"/>
     <property name="name" value="Pranshi Dhingra"/>
   </bean>
-  <bean id="Address" class="com.byName.bean.Address">
+  <bean id="Address" class="com.xml.bean.Address">
   	<property name="locality" value="Pawani oakridge"/>
   	<property name="stete" value="Karanataka"/>
   </bean>
   
-  <bean id="OAddress" class="com.byName.bean.OfficeAddress" >
+  <bean id="OAddress" class="com.xml.bean.OfficeAddress" >
   	<property name="locality" value="Saranya enclave"/>
   	<property name="stete" value="Karanataka"/>
   </bean>

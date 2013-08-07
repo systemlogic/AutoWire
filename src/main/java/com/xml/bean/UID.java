@@ -1,4 +1,4 @@
-package com.byName.bean;
+package com.xml.bean;
 
 public class UID {
 	Integer uid;

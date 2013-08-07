@@ -8,19 +8,19 @@
 	http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
   <!-- services -->
-  	<context:component-scan base-package="com.byName.bean" />
+  	<context:component-scan base-package="com.xml.bean" />
 
-  <bean id="uidBEAN" class="com.byName.bean.UID" autowire="byName" >
+  <bean id="uidBEAN" class="com.xml.bean.UID" autowire="byName" >
     <property name="uid" value="11002244"/>
     <property name="name" value="Pranshi Dhingra"/>
   </bean>
   
-   <bean id="address" class="com.byName.bean.Address">  <!-- check the bean id in UID class varaible which is same -->
+   <bean id="address" class="com.xml.bean.Address">  <!-- check the bean id in UID class varaible which is same -->
   	<property name="locality" value="Pawani oakridge"/>
   	<property name="stete" value="Karanataka"/>
   </bean>
   
-  <bean id="officeAddress" class="com.byName.bean.OfficeAddress" >
+  <bean id="officeAddress" class="com.xml.bean.OfficeAddress" >
   	<property name="locality" value="Saranya enclave"/>
   	<property name="stete" value="Karanataka"/>
   </bean>
