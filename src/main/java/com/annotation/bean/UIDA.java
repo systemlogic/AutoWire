@@ -1,18 +1,25 @@
 package com.annotation.bean;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
+@Configuration
 public class UIDA {
 	Integer uid;
 	String name;
-	
+
 	@Autowired
 	Address address;
 
+	@Autowired
 	OfficeAddress officeAddress;
 	
-	public UIDA(){}
+	public UIDA(){
+		this.name = "Pranshi Dhingra";
+		this.uid = 1122334455;
+	}
 	public UIDA(OfficeAddress officeAddress){
 		this.officeAddress = officeAddress;
 	}
