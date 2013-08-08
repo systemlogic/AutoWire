@@ -55,7 +55,7 @@ public class UIDTest {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("services-xml-Constructor.xml");
 		uid = (UID)ctx.getBean("uidBEAN");
 		System.out.println("Autowiring by Constructor");
-		System.out.println(uid.getName() + uid.getAddress());
+		System.out.println(uid.getName() + uid.getAddress() + "(Check why it is null)");
 		System.out.println(uid.getName() + uid.getOfficeAddress());
 		assertTrue(true);
 	}
@@ -64,7 +64,7 @@ public class UIDTest {
 	public void testAutoWireAnnotation() {
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
 		UIDA uid = ctx.getBean(UIDA.class);
-		System.out.println("Autowiring by Annotation");
+		System.out.println("Autowiring by Annotation and Qualifier");
 		System.out.println(uid.getName() + uid.getAddress());
 		System.out.println(uid.getName() + uid.getOfficeAddress());
 		assertTrue(true);

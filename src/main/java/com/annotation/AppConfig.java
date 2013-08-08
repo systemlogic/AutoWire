@@ -18,8 +18,12 @@ public class AppConfig {
 	public Address myAddress(){
 		return new Address("Pawani Oakridge","Karanataka");
 	}
-	@Bean
-	public OfficeAddress myOfficeAddress(){
-		return new OfficeAddress("Saranya Enclave","Karanataka");
+	@Bean(name="officeBean1")
+	public OfficeAddress myOfficeAddress1(){
+		return new OfficeAddress("Sapient","Karanataka");
+	}
+	@Bean(name="officeBean2")
+	public OfficeAddress myOfficeAddress2(){
+		return new OfficeAddress("IBM","Karanataka");
 	}
 }
