@@ -10,7 +10,7 @@
   <!-- services -->
   	<context:component-scan base-package="com.xml.bean" />
 
- <bean id="uidBEAN" class="com.xml.bean.UID" autowire="constructor" > <!--  no and default is same --> 
+ <bean id="uidBEAN" class="com.xml.bean.UID" autowire="constructor" >
     <property name="uid" value="11002244"/>
     <property name="name" value="Pranshi Dhingra"/>
   </bean>
